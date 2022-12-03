@@ -14,7 +14,7 @@ lab:
 
 - **Set up an Azure DevOps organization:** If you don't already have an Azure DevOps organization that you can use for this lab, create one by following the instructions available at [Create an organization or project collection](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization?view=azure-devops).
 
-- Visual Studio 2022 Community Edition available from [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/). Visual Studio 2022 installation should include **ASP<nolink>.NET and web development**, **Azure development**, and **.NET Core cross-platform development** workloads.
+- Visual Studio 2022 Community Edition available from [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/). Visual Studio 2022 installation should include **ASP<nolink>.NET and web development** and **Azure development** workloads.
 
 ## Lab overview
 
@@ -92,7 +92,7 @@ In this task, you will create and connect to a feed.
 
     > **Note**: This feed will be a collection of NuGet packages available to users within the organization and will sit alongside the public NuGet feed as a peer. The scenario in this lab will focus on the workflow for using Azure Artifacts, so the actual architectural and development decisions are purely illustrative.  This feed will include common functionality that can be shared across projects in this organization.
 
-1. On the **Create new feed** pane, in the **Name** textbox, type **PartsUnlimitedShared**, in the **Scope** section, select the **Organization** option, leave other settings with their default values, and click **Create**.
+1. On the **Create new feed** pane, in the **Name** textbox, type **PartsUnlimitedShared**, in the **Upstream sources** section, untick **Include packages from common public sources**, in the **Scope** section, select the **Organization** option, leave other settings with their default values, and click **Create**.
 
     > **Note**: Any user who wants to connect to this NuGet feed must configure their environment.
 
